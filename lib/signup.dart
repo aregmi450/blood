@@ -20,12 +20,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
             padding: EdgeInsets.all(20.0),
             child: Row(
               children: <Widget>[
-                IconButton(icon: Icon(Icons.person), onPressed: () {}),
+                IconButton(icon: Icon(Icons.email), onPressed: () {}),
                 Expanded(
                     child: Container(
                         margin: EdgeInsets.only(left: 4, right: 20),
                         child: TextField(
-                          decoration: InputDecoration(hintText: 'Name'),
+                          decoration: InputDecoration(hintText: 'Email'),
                         )))
               ],
             ),
@@ -53,7 +53,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     child: Container(
                         margin: EdgeInsets.only(left: 4, right: 20),
                         child: TextField(
-                          decoration: InputDecoration(hintText: 'Gender'),
+                          decoration: InputDecoration(hintText: 'Name'),
                         )))
               ],
             ),
@@ -62,12 +62,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
             padding: EdgeInsets.all(20.0),
             child: Row(
               children: <Widget>[
-                IconButton(icon: Icon(Icons.email), onPressed: () {}),
+                IconButton(icon: Icon(Icons.person), onPressed: () {}),
                 Expanded(
                     child: Container(
                         margin: EdgeInsets.only(left: 4, right: 20),
                         child: TextField(
-                          decoration: InputDecoration(hintText: 'Email'),
+                          decoration: InputDecoration(hintText: 'Gender'),
                         )))
               ],
             ),
