@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_project/signin.dart';
 import 'package:new_flutter_project/signup.dart';
 
 void main() => runApp(MyApp());
@@ -6,10 +7,17 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: MaterialApp(
-        home: SignupScreen(),
-      ),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.red),
+      // routing different pages from one place to another
+      initialRoute: 'SignUp',
+      // class name of every other page on stateless widget is given
+      routes: {
+        'SignIn': (context) => SignInScreen(),
+        'SignUp': (context) => SignUpScreen(),
+      },
     );
   }
 }
