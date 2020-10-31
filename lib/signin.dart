@@ -22,6 +22,7 @@ class _SignInScreenState extends State<SignInScreen> {
           SizedBox(
             height: 20.0,
           ),
+          // contains place for typing username
           Padding(
             padding: EdgeInsets.all(20.0),
             child: Row(
@@ -36,6 +37,7 @@ class _SignInScreenState extends State<SignInScreen> {
               ],
             ),
           ),
+          // place for password
           Padding(
             padding: EdgeInsets.all(20.0),
             child: Row(
@@ -81,6 +83,7 @@ class _SignInScreenState extends State<SignInScreen> {
             onTap: () {
               Navigator.pushNamed(context, 'SignUp');
             },
+            // to create new account
             child: Center(
               child: RichText(
                 text: TextSpan(

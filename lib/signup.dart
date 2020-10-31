@@ -16,6 +16,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           SizedBox(
             height: 20.0,
           ),
+          // fields to be filled for signing up to the app
           Padding(
             padding: EdgeInsets.all(20.0),
             child: Row(
@@ -120,6 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
 }
 
+// for going back to the home screen
 class BackbuttonWidget extends StatelessWidget {
   const BackbuttonWidget({
     Key key,
