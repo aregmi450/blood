@@ -117,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                       tittle: 'Gandaki Province',
                     ),
                     _selectedCleaning(
-                      color: Colors.red,
+                      color: Colors.blueGrey,
                       tittle: 'Lumbini Province',
                     ),
                     _selectedCleaning(
