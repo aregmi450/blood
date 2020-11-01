@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -45,9 +43,9 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
+// giving shape to the box containing the images
   Widget _selectedGroups({
     @required String image,
-    @required String name,
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -57,16 +55,9 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: 60,
+            height: 80,
             decoration:
                 BoxDecoration(image: DecorationImage(image: AssetImage(image))),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            name,
-            style: TextStyle(fontSize: 17),
           ),
         ],
       ),
@@ -173,6 +164,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.red,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Padding(
@@ -189,11 +181,25 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           _selectedGroups(
                             image: 'assets/a-pos.jpg',
-                            name: '30%',
                           ),
                           _selectedGroups(
                             image: 'assets/a-neg.jpg',
-                            name: '20%',
+                          ),
+                          _selectedGroups(
+                            image: 'assets/b-pos.jpg',
+                          ),
+                          _selectedGroups(
+                            image: 'assets/b-neg.jpg',
+                          ),
+                          _selectedGroups(image: 'assets/ab-pos.jpg'),
+                          _selectedGroups(
+                            image: 'assets/ab-neg.jpg',
+                          ),
+                          _selectedGroups(
+                            image: 'assets/o-pos.jpg',
+                          ),
+                          _selectedGroups(
+                            image: 'assets/o-neg.jpg',
                           ),
                         ],
                       ),
