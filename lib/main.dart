@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_project/homescreen.dart';
 import 'package:new_flutter_project/signin.dart';
 import 'package:new_flutter_project/signup.dart';
 
@@ -14,9 +15,11 @@ class MyApp extends StatelessWidget {
       // routing different pages from one place to another
       initialRoute: 'SignUp',
       // class name of every other page on stateless widget is given
+      // routing to every other page when class is called
       routes: {
         'SignIn': (context) => SignInScreen(),
         'SignUp': (context) => SignUpScreen(),
+        'Home': (context) => HomeScreen(),
       },
     );
   }

@@ -115,6 +115,51 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ],
             ),
           ),
+          SizedBox(
+            height: 40,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: <Widget>[
+                Radio(value: null, groupValue: null, onChanged: null),
+                RichText(
+                    text: TextSpan(
+                        text: 'I have accepted the',
+                        style: TextStyle(color: Colors.black),
+                        children: [
+                      TextSpan(
+                          text: 'Terms & Condition',
+                          style: TextStyle(
+                              color: Colors.green, fontWeight: FontWeight.bold))
+                    ]))
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(5),
+              child: Container(
+                height: 60,
+                child: RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, 'Home');
+                  },
+                  color: Colors.red[200],
+                  child: Text(
+                    'SIGN UP',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
