@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_project/contact.dart';
 import 'package:new_flutter_project/homescreen.dart';
 import 'package:new_flutter_project/signin.dart';
 import 'package:new_flutter_project/signup.dart';
@@ -13,13 +14,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.red),
       // routing different pages from one place to another
-      initialRoute: 'SignIn',
+      initialRoute: 'Phone',
       // class name of every other page on stateless widget is given
       // routing to every other page when class is called
       routes: {
         'SignIn': (context) => SignInScreen(),
         'SignUp': (context) => SignUpScreen(),
         'Home': (context) => HomeScreen(),
+        'Phone': (context) => Contact(),
       },
     );
   }
