@@ -4,7 +4,6 @@ class HomeScreen extends StatelessWidget {
   Widget _selectedCleaning({
     @required Color color,
     @required String tittle,
-    @required String subtittle,
   }) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 10.0),
@@ -28,16 +27,6 @@ class HomeScreen extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          SizedBox(
-            height: 5,
-          ),
-          Text(
-            subtittle,
-            style: TextStyle(
-              fontSize: 19,
-              color: Colors.white70,
-            ),
-          )
         ],
       ),
     );
@@ -94,9 +83,9 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 30, left: 30),
               child: Text(
-                'BLOOD GROUPS',
+                'BLOOD BANKS PROVINCE WISE',
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 22,
                   color: Colors.redAccent,
                   fontWeight: FontWeight.bold,
                 ),
@@ -112,41 +101,33 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'A+',
-                        subtittle: 'Second common blood type'),
+                      color: Colors.red,
+                      tittle: 'Province 1',
+                    ),
                     _selectedCleaning(
-                        color: Colors.amber,
-                        tittle: 'A-',
-                        subtittle: 'Powerful blood type'),
+                      color: Colors.amber,
+                      tittle: 'Province 2',
+                    ),
                     _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'B+',
-                        subtittle: 'Powerful blood type'),
+                      color: Colors.brown,
+                      tittle: 'Bagmati Province',
+                    ),
                     _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'B+',
-                        subtittle: 'Powerful blood type'),
+                      color: Colors.teal,
+                      tittle: 'Gandaki Province',
+                    ),
                     _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'B-',
-                        subtittle: 'Powerful blood type'),
+                      color: Colors.red,
+                      tittle: 'Province 5',
+                    ),
                     _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'AB-',
-                        subtittle: 'Powerful blood type'),
+                      color: Colors.orange,
+                      tittle: 'Province 6',
+                    ),
                     _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'AB+',
-                        subtittle: 'Powerful blood type'),
-                    _selectedCleaning(
-                        color: Colors.red,
-                        tittle: 'O-',
-                        subtittle: 'Powerful blood type'),
-                    _selectedCleaning(
-                        color: Colors.red,
-                        tittle: '0+',
-                        subtittle: 'Powerful blood type'),
+                      color: Colors.purple,
+                      tittle: 'Karnali Province',
+                    ),
                   ],
                 ),
               ),
@@ -160,7 +141,7 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'DONATOR GROUPS',
+                    'BLOOD GROUPS',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.red,
