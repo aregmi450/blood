@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -16,6 +18,8 @@ class HomeScreen extends StatelessWidget {
         image: DecorationImage(
           image: AssetImage(images),
           fit: BoxFit.fitWidth,
+          colorFilter:
+              ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.dstOut),
         ),
         boxShadow: [
           BoxShadow(blurRadius: 6.0),
@@ -106,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                   top: 30,
                 ),
                 child: Row(
-                  children: [
+                  children: <Widget>[
                     _selectedCleaning(
                       images: 'assets/prov1.jpg',
                       tittle: 'Province 1',
