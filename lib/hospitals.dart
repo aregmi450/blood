@@ -46,6 +46,12 @@ class Hospital extends StatelessWidget {
                     DataCell(Text('9844509832')),
                   ],
                 ),
+                DataRow(
+                  cells: <DataCell>[
+                    DataCell(Text('Grande International Hospital')),
+                    DataCell(Text('44309567')),
+                  ],
+                ),
               ],
             ),
           ]),
