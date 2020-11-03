@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_project/widgets/TextWithIcon.dart';
 
 class Contact extends StatelessWidget {
   Widget _selectedDonors({
@@ -30,11 +31,17 @@ class Contact extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Text(
-            contact,
-            style: TextStyle(
-              fontSize: 18,
+          TextWithIcon(
+            icon: Icon(
+              Icons.phone,
               color: Colors.white,
+            ),
+            text: Text(
+              contact,
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.white,
+              ),
             ),
           ),
           Text(
@@ -107,4 +114,70 @@ class Contact extends StatelessWidget {
           ),
         ));
   }
+
+  // Widget build(BuildContext context) {
+  //   return Scaffold(
+  //       backgroundColor: Colors.white,
+  //       appBar: AppBar(
+  //         elevation: 0.0,
+  //         backgroundColor: Colors.red[300],
+  //         title: Text(
+  //           'Hamro Blood',
+  //           style: TextStyle(fontSize: 23.5, fontWeight: FontWeight.bold),
+  //         ),
+  //         centerTitle: true,
+  //       ),
+  //       body: Container(
+  //         child: Column(
+  //           crossAxisAlignment: CrossAxisAlignment.start,
+  //           children: [
+  //             Text(
+  //               'DONOR INFORMATION',
+  //               textAlign: TextAlign.left,
+  //               style: TextStyle(
+  //                 fontSize: 30,
+  //                 color: Colors.red,
+  //                 fontWeight: FontWeight.bold,
+  //               ),
+  //             ),
+  //             Padding(
+  //               padding: EdgeInsets.only(
+  //                 top: 20,
+  //               ),
+  //               child: Container(
+  //                 height: 300,
+  //                 child: GridView.count(
+  //                   crossAxisCount: 2,
+  //                   crossAxisSpacing: 12,
+  //                   mainAxisSpacing: 8,
+  //                   childAspectRatio: 1.30,
+  //                   children: <Widget>[
+  //                     ...donors.map((donor) {
+  //                       return _selectedDonors(
+  //                           color: Colors.black,
+  //                           name: donor['name'],
+  //                           location: donor['location'],
+  //                           contact: donor['contact']);
+  //                     }).toList(),
+  //                   ],
+  //                 ),
+  //               ),
+  //             )
+  //           ],
+  //         ),
+  //       ));
+  // }
 }
+
+const donors = [
+  {
+    'name': 'Ramesh Sapkota',
+    'contact': '9860546791',
+    'location': 'Kathmandu',
+  },
+  {
+    'name': 'Ram Kapoor',
+    'contact': '9860543091',
+    'location': 'Pokhara',
+  }
+];
