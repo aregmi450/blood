@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   Widget _selectedCleaning({
-    @required Color color,
+    @required String images,
     @required String tittle,
   }) {
     return Container(
@@ -13,7 +13,13 @@ class HomeScreen extends StatelessWidget {
       height: 120,
       width: 240,
       decoration: BoxDecoration(
-        color: color,
+        image: DecorationImage(
+          image: AssetImage(images),
+          fit: BoxFit.fitWidth,
+        ),
+        boxShadow: [
+          BoxShadow(blurRadius: 6.0),
+        ],
         borderRadius: BorderRadius.circular(15.0),
       ),
       child: Column(
@@ -22,6 +28,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             tittle,
+            textDirection: TextDirection.ltr,
             style: TextStyle(
               fontSize: 22,
               color: Colors.white,
@@ -101,31 +108,31 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     _selectedCleaning(
-                      color: Colors.red,
+                      images: 'assets/prov1.jpg',
                       tittle: 'Province 1',
                     ),
                     _selectedCleaning(
-                      color: Colors.amber,
+                      images: 'assets/prov2.jpg',
                       tittle: 'Province 2',
                     ),
                     _selectedCleaning(
-                      color: Colors.brown,
+                      images: 'assets/prov3.jpg',
                       tittle: 'Bagmati Province',
                     ),
                     _selectedCleaning(
-                      color: Colors.teal,
+                      images: 'assets/prov4.jpg',
                       tittle: 'Gandaki Province',
                     ),
                     _selectedCleaning(
-                      color: Colors.blueGrey,
+                      images: 'assets/prov5.jpg',
                       tittle: 'Lumbini Province',
                     ),
                     _selectedCleaning(
-                      color: Colors.orange,
+                      images: 'assets/prov6.jpg',
                       tittle: 'Karnali Province',
                     ),
                     _selectedCleaning(
-                      color: Colors.purple,
+                      images: 'assets/prov7.jpg',
                       tittle: 'Sudurpaschim Province',
                     ),
                   ],
