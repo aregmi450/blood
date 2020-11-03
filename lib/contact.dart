@@ -86,7 +86,7 @@ class Contact extends StatelessWidget {
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 8,
                     childAspectRatio: 1.30,
-                    children: [
+                    children: <Widget>[
                       _selectedDonors(
                         color: Colors.black,
                         name: 'Ramesh Sapkota',
