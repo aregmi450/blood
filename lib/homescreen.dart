@@ -78,10 +78,10 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: ListView(
-          padding: EdgeInsets.only(left: 30, top: 30),
+          padding: EdgeInsets.only(left: 10, top: 10),
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 30, left: 30),
+              padding: const EdgeInsets.only(top: 20, left: 20),
               child: Text(
                 'BLOOD BANKS PROVINCE WISE',
                 style: TextStyle(
@@ -95,7 +95,7 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Padding(
                 padding: EdgeInsets.only(
-                  left: 30,
+                  left: 10,
                   top: 30,
                 ),
                 child: Row(
