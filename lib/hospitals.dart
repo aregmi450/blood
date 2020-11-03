@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Hospital extends StatelessWidget {
   @override
+  // app bar
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
@@ -14,6 +15,7 @@ class Hospital extends StatelessWidget {
           ),
           centerTitle: true,
         ),
+        // headline
         body: Container(
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -26,6 +28,7 @@ class Hospital extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            // table containing information about hospitals in different province
             DataTable(
               columns: <DataColumn>[
                 DataColumn(
