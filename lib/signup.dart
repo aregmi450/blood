@@ -82,7 +82,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     child: Container(
                         margin: EdgeInsets.only(left: 4, right: 20),
                         child: TextField(
-                          decoration: InputDecoration(hintText: 'Location'),
+                          decoration: InputDecoration(hintText:'Location'),
                         )))
               ],
             ),
