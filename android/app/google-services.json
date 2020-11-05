@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "396328769648",
+    "firebase_url": "https://blood-b0dba.firebaseio.com",
+    "project_id": "blood-b0dba",
+    "storage_bucket": "blood-b0dba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396328769648:android:7f791a0e8c61350ac9fcb5",
+        "android_client_info": {
+          "package_name": "com.example.blood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396328769648-5k7brt29jgb2h4cjamol4sdvvkpg263p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDilJxbcxweapXpJ1HAmqbdrEfPDTI_1IM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396328769648-5k7brt29jgb2h4cjamol4sdvvkpg263p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
