@@ -81,7 +81,7 @@ class _SignInScreenState extends State<SignInScreen> {
           ),
           InkWell(
             onTap: () {
-              Navigator.pushNamed(context, 'SignUp');
+              Navigator.pushNamed(context, 'Home');
             },
             // to create new account
             child: Center(
