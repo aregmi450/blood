@@ -4,8 +4,11 @@ import 'package:new_flutter_project/homescreen.dart';
 import 'package:new_flutter_project/hospitals.dart';
 import 'package:new_flutter_project/signin.dart';
 import 'package:new_flutter_project/signup.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.red),
       // routing different pages from one place to another
-      initialRoute: 'SignIn',
+      initialRoute: 'Login',
       // class name of every other page on stateless widget is given
       // routing to every other page when class is called
       routes: {
