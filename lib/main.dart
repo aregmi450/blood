@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.red),
       // routing different pages from one place to another
-      initialRoute: 'Login',
+      initialRoute: 'SignIn',
       // class name of every other page on stateless widget is given
       // routing to every other page when class is called
       routes: {
